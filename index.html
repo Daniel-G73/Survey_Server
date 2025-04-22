@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valicraft Survey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Valicraft Survey Form</h1>
+  <p id="description">Fill out the survey to give your feedback </p>
+
+  <form id="survey-form">
+    <hr>
+    <h2>Player information</h2>
+    <hr>
+    <div>
+      
+      <label for="name" id="name-label">
+        Nick
+      </label>
+      <input id="name" type="text" placeholder="Truenick123" required />
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" required id="email" placeholder="truemail123@gmail.com" />
+
+    </div>
+      <hr>
+      <h2>What do you do on the server?</h2>
+      <hr>
+    <div>
+
+      <label>
+        What is your main role on the server?
+        <span class="tooltip">🤔
+          <span class="tooltiptext">
+            · Miner: Digs deep<br>
+            · Architect: Designs builds<br>
+            · Builder: Constructs structures<br>
+            · Engineer: Automates systems<br>
+            · Gatherer: Collects resources<br>
+            · Decorator: Beautifies builds<br>
+            · Merchant: Trades with others
+          </span>
+        </span>
+      </label>
+      <select>
+        <option selected>Miner</option>
+        <option>Architect</option>
+        <option>Builder</option>
+        <option>Engineer</option>
+        <option>Gatherer</option>
+        <option>Decorator</option>
+        <option>Merchant</option>
+      </select>
+
+      <label>What is your secondary role on the server?</label>
+      <select>
+        <option>Miner</option>
+        <option>Architect</option>
+        <option>Builder</option>
+        <option>Engineer</option>
+        <option selected>Gatherer</option>
+        <option>Decorator</option>
+        <option>Merchant</option>
+      </select>
+    </div>
+
+  <hr>
+   <h2>Feedback about server</h2>
+  <hr>
+
+    <div>
+
+      <label for="number" class="score-label">Score server<input type="number" id="number" min="1" max="10" class="score" placeholder="1-10" class="score"/></label>
+     
+      <label for="comments">Comments about server
+      <textarea id="comments" rows="5" placeholder="My opinion about Valicraft..."></textarea>
+      </label>
+    </div>
+
+    <input id="button" class="button" type="submit">
+  </form>
+</body>
+</html>
